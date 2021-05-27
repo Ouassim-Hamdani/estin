@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>ESTIN Greve stats</title>
+</head>
+<body>
+    <h1>Statistiques</h1>
+    <h2>Mercredi 26-05-2021</h2>
+    <div class="box">
+        <div class="cp1">
+            <H1 class="titr">1CP</H1>
+            <H1>73%</H1>
+            <div class="chart"  data-percent="73"></div>
+            <h3>Nombre des etudiants present: 70</h3>
+        </div>
+        <div class="cp2">
+            <H1 class="titr">2CP</H1>
+            <H1>83%</H1>
+            <div class="chart"  data-percent="73"></div>
+            <h3>Nombre des etudiants present: 30</h3>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="jquery.easypiechart.js"></script>
+    <script>
+        $(function() {
+        $('.chart').easyPieChart({
+            //your options goes here
+            barColor:"#2b2d42",
+            lineWidth:"20",
+            trackColor:"#ef233c",
+            size:"250",
+            scaleColor:false
+        });
+    });
+    </script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/8.6.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/8.6.2/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+</body>
+</html>
